@@ -1,6 +1,6 @@
 /* Button
 *******************************************************************************/
-button {
+.button {
   background-color: #7fbf4d;
   background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #7fbf4d), color-stop(100%, #63a62f));
   background-image: -webkit-linear-gradient(top, #7fbf4d, #63a62f);
