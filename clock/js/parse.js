@@ -28,7 +28,7 @@
 	//var element = document.getElementById('salatId[i]');
 	//element.innerHTML = hour + ":" + minutes + " " + ampm;
 	//document.getElementById(salatId[i]).innerHTML = hour + ":" + minutes + " " + ampm;
-	var salatId[i] = hour + ":" + minutes + " " + ampm;
+	var salatId = hour + ":" + minutes + " " + ampm;
 	return salatId[i];
 	}
       }
