@@ -25,11 +25,7 @@
 	var ampm = hour >= 12 ? 'PM' : 'AM';
   	hour = hour % 12;
   	hour = hour ? hour : 12; // the hour '0' should be '12'
-	//var element = document.getElementById('salatId[i]');
-	//element.innerHTML = hour + ":" + minutes + " " + ampm;
-	//document.getElementById(salatId[i]).innerHTML = hour + ":" + minutes + " " + ampm;
-	var salatId = hour + ":" + minutes + " " + ampm;
-	return salatId[i];
+	document.getElementById(salatId[i]).innerHTML = hour + ":" + minutes + " " + ampm;
 	}
       }
     });
