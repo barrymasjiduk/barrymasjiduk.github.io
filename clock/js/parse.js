@@ -28,8 +28,8 @@
 	//var element = document.getElementById('salatId[i]');
 	//element.innerHTML = hour + ":" + minutes + " " + ampm;
 	//document.getElementById(salatId[i]).innerHTML = hour + ":" + minutes + " " + ampm;
-	var outputsalat = salatId[i] = hour + ":" + minutes + " " + ampm;
-	return outputsalat;
+	var salatId[i] = hour + ":" + minutes + " " + ampm;
+	return salatId[i];
 	}
       }
     });
