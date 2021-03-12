@@ -26,7 +26,7 @@
   	hour = hour % 12;
   	hour = hour ? hour : 12; // the hour '0' should be '12'
 	//document.getElementById(salatId[i]).innerHTML = hour + ":" + minutes + " " + ampm;
-	var salatname = salatId[i]
+	var salatname = (salatId[i]) = ;
 	var salattime =  hour + ":" + minutes + " " + ampm;
 	var outputsalat = salatname + salattime;
 	return outputsalat;
