@@ -27,7 +27,9 @@
   	hour = hour ? hour : 12; // the hour '0' should be '12'
 	//var element = document.getElementById('salatId[i]');
 	//element.innerHTML = hour + ":" + minutes + " " + ampm;
-	document.getElementById(salatId[i]).innerHTML = hour + ":" + minutes + " " + ampm;
+	//document.getElementById(salatId[i]).innerHTML = hour + ":" + minutes + " " + ampm;
+	var outputsalat = salatId[i] = hour + ":" + minutes + " " + ampm;
+	return outputsalat;
 	}
       }
     });
