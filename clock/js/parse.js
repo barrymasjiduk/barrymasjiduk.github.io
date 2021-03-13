@@ -27,8 +27,7 @@
   	hour = hour ? hour : 12; // the hour '0' should be '12'
 	//document.getElementById(salatId[i]).innerHTML = hour + ":" + minutes + " " + ampm;
 	var salat = document.getElementById(salatId[i]).innerHTML;
-	var salat = hour + ":" + minutes + " " + ampm; 
-	return salat;
+	salat = hour + ":" + minutes + " " + ampm; 
 	}
       }
     });
