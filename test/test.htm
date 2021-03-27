@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en-GB"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <link href="css/css.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="profile" href="http://gmpg.org/xfn/11">
+
+    </head>
+
+<body class="google-font">
+
+    <div class="entry-content">
+
+        
+        <div class="container-fluid x-board">
+            <input type="hidden" value="" id="screenTimeout">
+            <input type="hidden" value="[&quot;05:05:00&quot;,&quot;06:01:00&quot;,&quot;12:54:00&quot;,&quot;16:03:00&quot;,&quot;17:51:00&quot;,&quot;20:18:00&quot;]" id="refreshPoint">
+            <input type="hidden" value="[&quot;12:55:00&quot;,&quot;16:04:00&quot;,&quot;18:04:00&quot;,&quot;20:19:00&quot;]" id="otherAdhanTimes">
+            <input type="hidden" value="&quot;05:06:00&quot;" id="fajrAdhanTime">
+            <div class="row top-row">
+                <div class="time col-sm-3 col-xs-12 text-center height-100">
+                <div class="clock align-middle">
+                  <ul class="clock">
+                      <li id="hours">10</li>
+                      <li id="point">:</li>
+                      <li id="min">47</li>
+                      <li id="ampm">PM</li>
+                  </ul>
+                </div>
+                </div>
+                <div class="col-sm-7  col-xs-12 text-center bg-white height-100">
+                    <div class="align-middle">
+                        <span id="dsDate" class="date-eng h6 ">Sunday 14 March 2021</span>
+                        <span id="dsHijriDate" class="hijri">
+                        
+                        </span>
+                    </div>
+                </div>
+                <div class="col-sm-2 col-xs-12 text-right align-middle padding-null"></div>
+            </div>
+            <div class="row middle-row bg-red">
+                <div class="col-sm-5 col-xs-12 bg-red height-100 padding-null text-center">
+                    <table id="dsPrayerTimetable" class="table height-100 ">
+                    <thead class="bg-dark">
+                <tr>
+                    <th class="dsPrayerName">
+                        <span class="dpt_start">PRAYER</span>
+                    </th>
+                    <th class="dsBegins">
+                        <span class="dpt_start">BEGINS</span>
+                    </th>
+                    <th class="dsIqamah">
+                        <span class="dpt_jamah">IQAMAH</span>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="prayerName"><span>Fajr</span></td>
+                    <td class="l-red"><span class="dpt_start">4:21 am</span></td>
+                    <td><span class="dpt_jamah">5:21 am</span></td>
+                </tr>
+                <tr>
+                    <td class="prayerName"><span>Sunrise</span></td>
+                    <td class="prayerName sunrise" colspan="2"><span class="dpt_sunrise">6:17 am</span></td>
+                </tr>
+            <tr>
+                <td class="prayerName"><span>Zuhr</span></td>
+                <td class="l-red"><span class="dpt_start">12:10 pm</span></td>
+                <td><span class="dpt_jamah">1:10 pm</span></td>
+            </tr>
+    <tr>
+            <td class="prayerName"><span>Asr</span></td>
+            <td class="l-red"><span class="dpt_start">3:19 pm</span></td>
+            <td><span class="dpt_jamah">4:19 pm</span></td>
+        </tr>
+        <tr>
+            <td class="prayerName"><span>Maghrib</span></td>
+            <td class="l-red"><span class="dpt_start">6:04 pm</span></td>
+            <td><span class="dpt_jamah">6:07 pm</span></td>
+        </tr>
+        <tr>
+            <td class="prayerName"><span>Isha</span></td>
+            <td class="l-red"><span class="dpt_start">7:34 pm</span></td>
+            <td><span class="dpt_jamah">8:34 pm</span></td>
+        </tr>
+            </tbody>
+                    </table>
+        </div>
+            <div class="col-sm-7 col-xs-12 padding-null text-center bg-green height-100 padding-null">
+                <div id="text-carousel" class="carousel slide 
+                    height-100" data-ride="carousel" data-interval="" data-pause="false">
+                    <div class="carousel-inner height-100">
+                        <div class="item active height-100">
+                        
+            <div class="nextPrayer height-100">
+                <div class="align-middle"><h3 class="">Next ...</h3><h2 id="dsNextPrayer" class="dsNextPrayer ">
+        <div class="dptScNextPrayer">
+            <span class="green">
+                <span class="nextPrayer">Fajr Iqamah</span> <h2 class="dptScTime">5:19 am
+                </h2> 
+                <span class="timeLeftCountDown timeLeft red"> 
+                     
+                </span><span class="minLeftText"> </span>
+        </span></div></h2>
+                </div>
+            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+                <!-- <div class="row bottom-row">
+                    <div class="notificationBackground col-sm-3 col-xs-12 text-center height-100 align-middle">
+                        <div class="align-middle">
+                                <span id="dsBlink" class="blink"><a target="_new" href="">WELCOME TO HOUSE OF ALLAH</a></span>
+                        </div>
+                    </div>
+                    <div class="col-sm-9 col-xs-12 height-100">
+                        <div class="align-middle">
+                            <h3 class="text-primary scrolling">
+                                <marquee id="dsIqamahUpdate" scrollamount="11"><div class="jamahChanges jamahChanges-horizontal">
+            <span class="x-time-text">IQAMAH UPDATE FOR TOMORROW</span><span class="x-time-change">Fajr: 5:19 am</span><span class="x-time-change">Zuhr: 1:09 pm</span><span class="x-time-change">Asr: 4:20 pm</span><span class="x-time-change">Maghrib: 6:08 pm</span><span class="x-time-change">Isha: 8:35 pm</span></div></marquee>
+                            </h3>
+                        </div>
+                    </div>
+                </div>
+            </div> -->
+    </div><!-- .entry-content -->
+
+<link rel="stylesheet" id="timetable-style-css" href="css/styles.css" type="text/css" media="all">
+<link rel="stylesheet" id="verge-style-css" href="css/vergestyles.css" type="text/css" media="all">
+<link rel="stylesheet" id="jquery-ui-css" href="css/jquery-ui.css" type="text/css" media="all">
+<link rel="stylesheet" id="dpt_font_awesome-css" href="css/font-awesome.css" type="text/css" media="all">
+<link rel="stylesheet" id="jquery_ui_css-css" href="css/jquery-ui_002.css" type="text/css" media="all">
+<link rel="stylesheet" id="bootstrap-select-css" href="css/bootstrap-select.css" type="text/css" media="all">
+<script type="text/javascript" src="css/jquery.js" id="jquery-core-js"></script>
+<script type="text/javascript" id="dpt-js-extra">
+/* <![CDATA[ */
+var timetable_params = {"ajaxurl":"http:\/\/localhost\/wordpress\/wp-admin\/admin-ajax.php"};
+/* ]]> */
+</script>
+<script type="text/javascript" src="js/dpt.js" id="dpt-js"></script>
+<script type="text/javascript" src="js/popper.js" id="dpt_popper_js-js"></script>
+<script type="text/javascript" src="js/core.js" id="jquery-ui-core-js"></script>
+<script type="text/javascript" src="js/widget.js" id="jquery-ui-widget-js"></script>
+<script type="text/javascript" src="js/mouse.js" id="jquery-ui-mouse-js"></script>
+<script type="text/javascript" src="js/resizable.js" id="jquery-ui-resizable-js"></script>
+<script type="text/javascript" src="js/draggable.js" id="jquery-ui-draggable-js"></script>
+<script type="text/javascript" src="js/button.js" id="jquery-ui-button-js"></script>
+<script type="text/javascript" src="js/position.js" id="jquery-ui-position-js"></script>
+<script type="text/javascript" src="js/dialog.js" id="jquery-ui-dialog-js"></script>
+<script type="text/javascript" src="js/jquery-ui.js" id="jquery-ui-js"></script>
+<script type="text/javascript" src="js/jquery_002.js" id="jquery-cookie-js"></script>
+<script type="text/javascript" src="js/jquery_003.js" id="jquery-blockUI-js"></script>
+<script src="js/bootstrap.js"></script>
+
+
+</body></html>
