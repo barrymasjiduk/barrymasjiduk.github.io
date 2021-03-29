@@ -1,149 +1,134 @@
 <!DOCTYPE html>
+
 <html>
 
 <head>
 
-  <meta charset="utf-8">
-  <!-- <meta http-equiv="X-UA-Compatible" content="IE=edge"> -->
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta http-equiv="refresh" content="21600">
+    <!-- <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Mosque Information Screen</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="./css/main.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="./css/bootstrap-grid.min.css" /> -->
 
-  <title>Barry Masjid Prayer Times</title>
-
-  <link href="img/favicon.ico" rel="shortcut icon" />
-  <link href="css/bootstrap.min.css" rel="stylesheet">
-  <link rel="stylesheet" type="text/css" href="css/styles.css">
-  <script src="js/timedate.js"></script>
-  <script src="js/islamicdate.js"></script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="refresh" content="21600">
+    <title>Barry Masjid Prayer Times</title>
+    <link href="images/favicon.ico" rel="shortcut icon" />
+    <link rel="stylesheet" type="text/css" media="screen" href="./css/main.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="./css/bootstrap-grid.min.css" />
+    <script src="js/timedate.js"></script>
+    <script src="js/islamicdate.js"></script>
 
 </head>
 
-<body onload="startTime()">
+<body  onload="startTime()">
 
-  <div class="container-fluid">
     <div class="row">
-      <div class="col-md-7">
-        <div class="panel-body-3" id="title">Barry Masjid Prayer Times</div>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-md-5">
-        <div class="panel-body-3" id="date">| Date Here |></div>
-      </div>
-      <div class="col-md-5 pull-right">
-        <div class="panel-body-3" id="islamic"><script>document.write(writeIslamicDate());</script></div>
-        <!-- <div class="panel-body-3" id="islamic">| Islamic Date Here |</div> -->
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-md-12">
-        <div class="panel-body-3" id="time">5:10 PM</div>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-md-3">
-        <!-- <div class="panel-body-3" id="salah">Salah</div> -->
-      </div>
-      <div class="col-md-3">
-        <div class="panel-body-3" id="begin">Begin</div>
-      </div>
-      <div class="col-md-3">
-        <div class="panel-body-3" id="jamaat">Jamaat</div>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-md-3">
-        <div class="panel-body-3" id="suhoor">Suhoor End</div>
-      </div>
-      <div class="col-md-8">
-        <div class="panel-body-3" id="suhoor_end">00:00 AM</div>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-md-3">
-        <div class="panel-body-3" id="fajr">Fajr</div>
-      </div>
-      <div class="col-md-3">
-        <div class="panel-body-3" id="fajr_begin">00:00 AM</div>
-      </div>
-      <div class="col-md-3">
-        <div class="panel-body-3" id="fajr_jamaat">00:00 AM</div>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-md-3">
-        <div class="panel-body-3" id="sunrise">Sunrise</div>
-      </div>
-      <div class="col-md-8">
-        <div class="panel-body-3" id="sunrise_begin">00:00 AM</div>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-md-3">
-        <div class="panel-body-3" id="zawaal">Zawaal</div>
-      </div>
-      <div class="col-md-8">
-        <div class="panel-body-3" id="zawaal_begin">00:00 PM</div>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-md-3">
-        <div class="panel-body-3" id="zuhr">Zuhr / Jumu-ah</div>
-      </div>
-      <div class="col-md-3">
-        <div class="panel-body-3" id="zuhr_begin">00:00 PM</div>
-      </div>
-      <div class="col-md-3">
-        <div class="panel-body-3" id="zuhr_jamaat">00:00 PM</div>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-md-3">
-        <div class="panel-body-3" id="asr">Asr</div>
-      </div>
-      <div class="col-md-3">
-        <div class="panel-body-3" id="asr_begin">00:00 PM</div>
-      </div>
-      <div class="col-md-3">
-        <div class="panel-body-3" id="asr_jamaat">00:00 PM</div>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-md-3">
-        <div class="panel-body-3" id="sunset">Sunset</div>
-      </div>
-      <div class="col-md-8">
-        <div class="panel-body-3" id="sunset_begin">00:00 PM</div>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-md-3">
-        <div class="panel-body-3" id="maghrib">Maghrib</div>
-      </div>
-      <div class="col-md-3">
-        <div class="panel-body-3" id="maghrib_begin">00:00 PM</div>
-      </div>
-      <div class="col-md-3">
-        <div class="panel-body-3" id="maghrib_jamaat">00:00 PM</div>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-md-3">
-        <div class="panel-body-3" id="isha">Isha</div>
-      </div>
-      <div class="col-md-3">
-        <div class="panel-body-3" id="isha_begin">00:00 PM</div>
-      </div>
-      <div class="col-md-3">
-        <div class="panel-body-3" id="isha_jamaat">00:00 PM</div>
-      </div>
-    </div>
-  </div>
+    
+        <div class="col-6 section-time-and-notices">
+            <div>
+               <div id="time"></div>
+            </div>
+            <div>
+               <div id="date"></div>
+            </div>
+            <div>
+               <div id="islamic"><script>document.write(writeIslamicDate(-1));</script></div>
+            </div>
 
-  <script src="js/jquery.min.js"></script>
-  <script src="js/bootstrap.min.js"></script>
-  <script src="js/papaparse.js"></script>
-  <script src="js/parse.js"></script>
+            <div class="next-prayer">
+                <p class="italic">Next Prayer</p>
+                <p class="bold text-info">Jama'ah 05:40PM</p>
+                <p class="italic">Time Left</p>
+            </div>
+            
+        </div>
+        <div id="title">Barry Masjid</div>
+        <!-- <div id="logo">
+            <img src="./images/elm_logo.png" alt="logo">
+        </div> -->
+        <div class="col-6 section-prayer-times">
+            <table class="daily-prayer-times">
+                <thead>
+                    <tr>
+                        <th></th>
+                        <th></th>
+                        <th id="begin">Begins</th>
+                        <th id="jamaat">Jama'ah</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th id="suhoor">Suhoor End</th>
+                        <td></td>
+                        <td id="suhoor_end">0:00</td>
+                    </tr>
+                    <tr>
+                        <th id="fajr">Fajr</th>
+                        <td></td>
+                        <td id="fajr_begin">0:00</td>
+                        <td id="fajr_jamaat">0:00</td>
+                    </tr>
+                    <tr>
+                        <th id="sunrise">Sunrise</th>
+                        <td></td>
+                        <td id="sunrise_begin">0:00</td>
+                    </tr>
+                    <tr>
+                        <th id="zawaal">Zawaal</th>
+                        <td></td>
+                        <td id="zawaal_begin">0:00</td>
+                    </tr>
+                    <tr>
+                        <th id="zuhr">Zuhr/Jumu'ah</th>
+                        <td></td>
+                        <td id="zuhr_begin">0:00</td>
+                        <td id="zuhr_jamaat">0:00</td>
+                    </tr>
+                    <tr>
+                        <th id="asr">'Asr</th>
+                        <td></td>
+                        <td id="asr_begin">0:00</td>
+                        <td id="asr_jamaat">0:00</td>
+                    </tr>
+                    <tr>
+                        <th id="sunset">Sunset</th>
+                        <td></td>
+                        <td id="sunset_begin">0:00</td>
+                    </tr>
+                    <tr>
+                        <th id="maghrib">Maghrib/Iftaar</th>
+                        <td></td>
+                        <td id="maghrib_begin">0:00</td>
+                        <td id="maghrib_jamaat">0:00</td>
+                    </tr>
+                    <tr>
+                        <th id="isha">'Isha'</th>
+                        <td></td>
+                        <td id="isha_begin">0:00</td>
+                        <td id="isha_jamaat">0:00</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <button id="toggleFullScreen">Start</button>
+
+   <!-- <script src="./js/lib/jquery.js"></script>
+    <script src="./js/lib/moment.js"></script>
+    <script src="./js/lib/moment-hijri.js"></script>
+    <script src="./js/clock.class.js"></script>
+    <script src="./js/screen.class.js"></script>
+    <script src="./js/prayer-times.class.js"></script>
+    <script src="./js/main.js"></script> -->
+
+    <script src="js/screen.class.js"></script>
+    <script src="js/papaparse.js"></script>
+    <script src="js/parse.js"></script>
+    <script src="js/main.js"></script>
 
 </body>
 

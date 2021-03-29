@@ -1,5 +1,5 @@
 
-  Papa.parse("data/data.csv", {
+  Papa.parse("files/data.csv", {
     download: true,
     dynamicTyping: true,
     header: true, 
@@ -25,11 +25,8 @@
 	var ampm = hour >= 12 ? 'PM' : 'AM';
   	hour = hour % 12;
   	hour = hour ? hour : 12; // the hour '0' should be '12'
-	 if(salatId[i] == '') {
-	  document.getElementById(salatId[i]).innerHTML = hour + ":" + minutes + " " + ampm;
-	 } else {
-	  document.getElementById(salatId[i]).innerHTML = hour + ":" + minutes + " " + ampm;
-	 }
+	document.getElementById(salatId[i]).innerHTML = hour + ":" + minutes + " " + ampm;
+
 	}
       }
     });

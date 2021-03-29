@@ -95,8 +95,6 @@ function writeIslamicDate(adjustment) {
 	var outputIslamicDate = wdNames[iDate[4]] + " " 
 	+ iDate[5] + th + " " + iMonthNames[iDate[6]] + " " + iDate[7] + " A.H";
 	return outputIslamicDate;
-	//document.getElementById("islamic").innerHTML = wdNames[iDate[4]] + " " 
-	//+ iDate[5] + th + " " + iMonthNames[iDate[6]] + " " + iDate[7] + " A.H";
 }
 
 function getDaySuffix(num) {

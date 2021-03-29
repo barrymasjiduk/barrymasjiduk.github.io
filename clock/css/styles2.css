@@ -1,0 +1,317 @@
+
+body {
+  background-color:#000;
+}
+
+#title {
+  font-size: 3.9em;
+  font-weight: 900;
+  text-align: center;
+  color:#fff;
+  background-color:#035441;
+}
+
+#date {
+  font-size: 1.9em;
+  font-weight: 900;
+  text-align: center;
+  color:#fff;
+  background-color:#035441;
+}
+
+#islamic {
+  font-size: 1.9em;
+  font-weight: 900;
+  text-align: center;
+  color:#fff;
+  background-color:#035441;
+}
+
+#time {
+  font-size: 17em;
+  font-weight: 900;
+  text-align: center;
+  color:#ffff00;
+  background-color:#000;
+}
+
+small.text-muted {
+  font-size: 0.5em;
+  font-weight: 900;
+  color: #ffff00!important;
+  background-color:#000;
+}
+
+#salah {
+  font-size: 3em;
+  font-weight: 900;
+  text-align: center;
+  color:#fff;
+  background-color:#000;
+}
+
+#begin {
+  font-size: 3em;
+  font-weight: 900;
+  text-align: center;
+  color:#fff;
+  background-color:#156b2c;
+  border-bottom:1px solid #000;
+}
+
+#jamaat {
+  font-size: 3em;
+  font-weight: 900;
+  text-align: center;
+  color:#fff;
+  background-color:#0d3a8f;
+  border-bottom:1px solid #000;
+  border-left:1px solid #000;
+}
+
+#suhoor {
+  font-size: 3em;
+  font-weight: 900;
+  text-align: center;
+  color:#fff;
+  background-color:#363432;
+  border-bottom:1px solid #000;
+  border-right:1px solid #000;
+}
+
+#suhoor_end {
+  font-size: 3em;
+  font-weight: 900;
+  text-align: center;
+  color:#fff;
+  background-color:#d15102;
+  border-bottom:1px solid #000;
+}
+
+#fajr {
+  font-size: 3em;
+  font-weight: 900;
+  text-align: center;
+  color:#fff;
+  background-color:#363432;
+  border-bottom:1px solid #000;
+}
+
+#fajr_begin {
+  font-size: 3em;
+  font-weight: 900;
+  text-align: center;
+  color:#fff;
+  background-color:#156b2c;
+  border-bottom:1px solid #000;
+  border-left:1px solid #000;
+}
+
+#fajr_jamaat {
+  font-size: 3em;
+  font-weight: 900;
+  text-align: center;
+  color:#fff;
+  background-color:#0d3a8f;
+  border-bottom:1px solid #000;
+  border-left:1px solid #000;
+}
+
+#sunrise {
+  font-size: 3em;
+  font-weight: 900;
+  text-align: center;
+  color:#fff;
+  background-color:#363432;
+  border-bottom:1px solid #000;
+  border-right:1px solid #000;
+}
+
+#sunrise_begin {
+  font-size: 3em;
+  font-weight: 900;
+  text-align: center;
+  color:#fff;
+  background-color:#c9080f;
+  border-bottom:1px solid #000;
+}
+
+#zawaal  {
+  font-size: 3em;
+  font-weight: 900;
+  text-align: center;
+  color:#fff;
+  background-color:#363432;
+  border-bottom:1px solid #000;
+  border-right:1px solid #000;
+}
+
+#zawaal_begin  {
+  font-size: 3em;
+  font-weight: 900;
+  text-align: center;
+  color:#fff;
+  background-color:#c9080f;
+  border-bottom:1px solid #000;
+}
+
+#zuhr {
+  font-size: 3.1em;
+  font-weight: 900;
+  text-align: center;
+  color:#fff;
+  background-color:#363432;
+  border-bottom:1px solid #000;
+}
+
+#zuhr_begin {
+  font-size: 3em;
+  font-weight: 900;
+  text-align: center;
+  color:#fff;
+  background-color:#156b2c;
+  border-bottom:1px solid #000;
+  border-left:1px solid #000;
+}
+
+#zuhr_jamaat {
+  font-size: 3em;
+  font-weight: 900;
+  text-align: center;
+  color:#fff;
+  background-color:#0d3a8f;
+  border-bottom:1px solid #000;
+  border-left:1px solid #000;
+}
+
+#asr {
+  font-size: 3em;
+  font-weight: 900;
+  text-align: center;
+  color:#fff;
+  background-color:#363432;
+  border-bottom:1px solid #000;
+}
+
+#asr_begin {
+  font-size: 3em;
+  font-weight: 900;
+  text-align: center;
+  color:#fff;
+  background-color:#156b2c;
+  border-bottom:1px solid #000;
+  border-left:1px solid #000;
+}
+
+#asr_jamaat {
+  font-size: 3em;
+  font-weight: 900;
+  text-align: center;
+  color:#fff;
+  background-color:#0d3a8f;
+  border-bottom:1px solid #000;
+  border-left:1px solid #000;
+}
+
+#sunset {
+  font-size: 3em;
+  font-weight: 900;
+  text-align: center;
+  color:#fff;
+  background-color:#363432;
+  border-bottom:1px solid #000;
+  border-right:1px solid #000;
+}
+
+#sunset_begin {
+  font-size: 3em;
+  font-weight: 900;
+  text-align: center;
+  color:#fff;
+  background-color:#c9080f;
+  border-bottom:1px solid #000;
+}
+
+#maghrib {
+  font-size: 3em;
+  font-weight: 900;
+  text-align: center;
+  color:#fff;
+  background-color:#363432;
+  border-bottom:1px solid #000;
+}
+
+#maghrib_begin {
+  font-size: 3em;
+  font-weight: 900;
+  text-align: center;
+  color:#fff;
+  background-color:#156b2c;
+  border-bottom:1px solid #000;
+  border-left:1px solid #000;
+}
+
+#maghrib_jamaat {
+  font-size: 3em;
+  font-weight: 900;
+  text-align: center;
+  color:#fff;
+  background-color:#0d3a8f;
+  border-bottom:1px solid #000;
+  border-left:1px solid #000;
+}
+
+#isha {
+  font-size: 3em;
+  font-weight: 900;
+  text-align: center;
+  color:#fff;
+  background-color:#363432;
+}
+
+#isha_begin {
+  font-size: 3em;
+  font-weight: 900;
+  text-align: center;
+  color:#fff;
+  background-color:#156b2c;
+  border-left:1px solid #000;
+}
+
+#isha_jamaat {
+  font-size: 3em;
+  font-weight: 900;
+  text-align: center;
+  color:#fff;
+  background-color:#0d3a8f;
+  border-left:1px solid #000;
+}
+
+#jumu-ah {
+  font-size: 3em;
+  font-weight: 900;
+  text-align: center;
+  color:#1489e3;
+}
+
+#jumu-ah_jamaat {
+  font-size: 3em;
+  font-weight: 900;
+  text-align: center;
+  color:#1489e3;
+}
+
+#eid {
+  font-size: 3em;
+  font-weight: 900;
+  text-align: center;
+  color:#1489e3;
+}
+
+#eid_jamaat {
+  font-size: 3em;
+  font-weight: 900;
+  text-align: center;
+  color:#1489e3;
+}
+

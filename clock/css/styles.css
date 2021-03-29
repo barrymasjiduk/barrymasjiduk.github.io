@@ -1,555 +1,161 @@
 
-body {
-  background-color:#000;
+body, {
+  background-color:#fff;
 }
 
-.col-md-3 {
-  width: 33.3%;
-  margin: 0% 0% 1% 0%;
-  border-color: #000;
-  background-color:#000;
+
+table, {
+  border-collapse: collapse;  
+  border: 0px solid black;
 }
 
-.col-md-5 {
-  width: 41%;
-  margin: 0% 0% 2% 0%;
-  border-color: #000;
-  background-color:#000;
-}
-
-.col-md-7 {
-  width: 59%;
-  margin: 1% 0% 1% 20%;
-  border-color: #000;
-  background-color:#000;
-}
-
-.col-md-8 {
-  margin: 0% 0% 0% 0%;
-  border-color: #000;
-  background-color:#000;
+tr, {
+  border-collapse: collapse;  
+  border: 0px solid black;
 
 }
 
-.col-md-12 {
-  width: 100%;
-  margin: 0% 0% 2% 0%;
-  border-color: #000;
-  background-color:#000;
+th {
+
+}
+
+td {
+
 }
 
 #title {
-  font-size: 3.7em;
-  font-weight: 700;
-  text-align: center;
-  vertical-align: middle;
-  min-height: 90px;
-  line-height: 90px;
-  color:#fff;
-  background-color:#3c763d;
-  border-radius: 11px;
-  border-top:3px solid #fff;
-  border-bottom:3px solid #fff; 
-  border-left:3px solid #fff; 
-  border-right:3px solid #fff;
+
+
 }
 
 #date {
-  font-size: 1.9em;
-  font-weight: 700;
-  text-align: left;
-  vertical-align: middle;
-  padding-left: 10px;
-  min-height: 55px;
-  line-height: 55px;
-  color:#fff;
-  background-color:#3c763d;
-  border-radius: 11px;
-  border-top:3px solid #fff;
-  border-bottom:3px solid #fff; 
-  border-left:3px solid #fff; 
-  border-right:3px solid #fff;
+
 }
 
 #islamic {
-  font-size: 1.9em;
-  font-weight: 700;
-  text-align: right;
-  vertical-align: middle;
-  padding-right: 10px;
-  min-height: 55px;
-  line-height: 55px;
-  margin-right: 0%; 
-  color:#fff;
-  background-color:#3c763d;
-  border-radius: 11px;
-  border-top:3px solid #fff;
-  border-bottom:3px solid #fff; 
-  border-left:3px solid #fff; 
-  border-right:3px solid #fff;
+
 }
 
 #time {
-  font-size: 17em;
-  font-weight: 900;
-  text-align: center;
-  vertical-align: middle;
-  min-height: 300px;
-  line-height: 300px;
-  color:#ffff00;
-  background-color: #000;
-  border-radius: 11px;
-  border-top:3px solid #ffff00;
-  border-bottom:3px solid #ffff00; 
-  border-left:3px solid #ffff00; 
-  border-right:3px solid #ffff00;
+
 }
 
 small.text-muted {
   font-size: 0.5em;
   font-weight: 100;
-  color: #ffff00!important;
-  background-color: #000;
+  color: #000!important;
+  background-color: #fff;
 }
 
 #salah {
-  font-size: 6.5em;
-  font-weight: 900;
-  text-align: center;
-  vertical-align: middle;
-  min-height: 150px;
-  line-height: 150px;
+
 }
 
 #begin {
-  font-size: 6.5em;
-  font-weight: 900;
-  text-align: center;
-  vertical-align: middle;
-  min-height: 150px;
-  line-height: 150px;
-  color:#00CD00;
-  background-color:#000;
-  border-radius: 11px;
-  border-top:3px solid #00CD00;
-  border-bottom:3px solid #00CD00; 
-  border-left:3px solid #00CD00; 
-  border-right:3px solid #00CD00;
+
 }
 
 #jamaat {
-  font-size: 6.5em;
-  font-weight: 900;
-  text-align: center;
-  vertical-align: middle;
-  min-height: 150px;
-  line-height: 150px;
-  color:#33b5ff;
-  background-color:#000;
-  border-radius: 11px;
-  border-top:3px solid #33b5ff;
-  border-bottom:3px solid #33b5ff; 
-  border-left:3px solid #33b5ff; 
-  border-right:3px solid #33b5ff;
+
 }
 
 #suhoor {
-  font-size: 4.4em;
-  font-weight: 900;
-  text-align: center;
-  vertical-align: middle;
-  min-height: 150px;
-  line-height: 150px;
-  color:#ffbd33;
-  background-color:#000;
-  border-radius: 11px;
-  border-top:3px solid #ffbd33;
-  border-bottom:3px solid #ffbd33; 
-  border-left:3px solid #ffbd33; 
-  border-right:3px solid #ffbd33;
+
 }
 
 #suhoor_end {
-  font-size: 5em;
-  font-weight: 900;
-  text-align: center;
-  vertical-align: middle;
-  min-height: 150px;
-  line-height: 150px;
-  color:#ffbd33;
-  background-color:#000;
-  border-radius: 11px;
-  border-top:3px solid #ffbd33;
-  border-bottom:3px solid #ffbd33; 
-  border-left:3px solid #ffbd33; 
-  border-right:3px solid #ffbd33;
+
 }
 
 #fajr {
-  font-size: 6.5em;
-  font-weight: 900;
-  color:#00CD00;
-  text-align: center;
-  vertical-align: middle;
-  min-height: 150px;
-  line-height: 150px;
-  background-color:#000;
-  border-radius: 11px;
-  border-top:3px solid #00CD00;
-  border-bottom:3px solid #00CD00; 
-  border-left:3px solid #00CD00; 
-  border-right:3px solid #00CD00;
+
 }
 
 #fajr_begin {
-  font-size: 5em;
-  font-weight: 900;
-  text-align: center;
-  vertical-align: middle;
-  min-height: 150px;
-  line-height: 150px;
-  color:#00CD00;
-  background-color:#000;
-  border-radius: 11px;
-  border-top:3px solid #00CD00;
-  border-bottom:3px solid #00CD00; 
-  border-left:3px solid #00CD00; 
-  border-right:3px solid #00CD00;
+
 }
 
 #fajr_jamaat {
-  font-size: 5em;
-  font-weight: 900;
-  text-align: center;
-  vertical-align: middle;
-  min-height: 150px;
-  line-height: 150px;
-  color:#33b5ff;
-  background-color:#000;
-  border-radius: 11px;
-  border-top:3px solid #33b5ff;
-  border-bottom:3px solid #33b5ff; 
-  border-left:3px solid #33b5ff; 
-  border-right:3px solid #33b5ff;
+
 }
 
 #sunrise {
-  font-size: 6.5em;
-  font-weight: 900;
-  text-align: center;
-  vertical-align: middle;
-  min-height: 150px;
-  line-height: 150px;
-  color:#FF0000;
-  background-color:#000;
-  border-radius: 11px;
-  border-top:3px solid #FF0000;
-  border-bottom:3px solid #FF0000; 
-  border-left:3px solid #FF0000; 
-  border-right:3px solid #FF0000;
+
 }
 
 #sunrise_begin {
-  font-size: 5em;
-  font-weight: 900;
-  text-align: center;
-  vertical-align: middle;
-  min-height: 150px;
-  line-height: 150px;
-  color:#FF0000;
-  background-color:#000;
-  border-radius: 11px;
-  border-top:3px solid #FF0000;
-  border-bottom:3px solid #FF0000; 
-  border-left:3px solid #FF0000; 
-  border-right:3px solid #FF0000;
+
 }
 
 #zawaal  {
-  font-size: 6.5em;
-  font-weight: 900;
-  text-align: center;
-  vertical-align: middle;
-  min-height: 150px;
-  line-height: 150px;
-  color:#FF0000;
-  background-color:#000;
-  border-radius: 11px;
-  border-top:3px solid #FF0000;
-  border-bottom:3px solid #FF0000; 
-  border-left:3px solid #FF0000; 
-  border-right:3px solid #FF0000;
+
 }
 
 #zawaal_begin  {
-  font-size: 5em;
-  font-weight: 900;
-  text-align: center;
-  vertical-align: middle;
-  min-height: 150px;
-  line-height: 150px;
-  color:#FF0000;
-  background-color:#000;
-  border-radius: 11px;
-  border-top:3px solid #FF0000;
-  border-bottom:3px solid #FF0000; 
-  border-left:3px solid #FF0000; 
-  border-right:3px solid #FF0000;
+
 }
 
 #zuhr {
-  font-size: 3.1em;
-  font-weight: 900;
-  text-align: center;
-  vertical-align: middle;
-  min-height: 150px;
-  line-height: 150px;
-  color:#00CD00;
-  background-color:#000;
-  border-radius: 11px;
-  border-top:3px solid #00CD00;
-  border-bottom:3px solid #00CD00; 
-  border-left:3px solid #00CD00; 
-  border-right:3px solid #00CD00;
+
 }
 
 #zuhr_begin {
-  font-size: 5em;
-  font-weight: 900;
-  text-align: center;
-  vertical-align: middle;
-  min-height: 150px;
-  line-height: 150px;
-  color:#00CD00;
-  background-color:#000;
-  border-radius: 11px;
-  border-top:3px solid #00CD00;
-  border-bottom:3px solid #00CD00; 
-  border-left:3px solid #00CD00; 
-  border-right:3px solid #00CD00;
+
 }
 
 #zuhr_jamaat {
-  font-size: 5em;
-  font-weight: 900;
-  text-align: center;
-  vertical-align: middle;
-  min-height: 150px;
-  line-height: 150px;
-  color:#33b5ff;
-  background-color:#000;
-  border-radius: 11px;
-  border-top:3px solid #33b5ff;
-  border-bottom:3px solid #33b5ff; 
-  border-left:3px solid #33b5ff; 
-  border-right:3px solid #33b5ff;
+
 }
 
 #asr {
-  font-size: 6.5em;
-  font-weight: 900;
-  text-align: center;
-  vertical-align: middle;
-  min-height: 150px;
-  line-height: 150px;
-  color:#00CD00;
-  background-color:#000;
-  border-radius: 11px;
-  border-top:3px solid #00CD00;
-  border-bottom:3px solid #00CD00; 
-  border-left:3px solid #00CD00; 
-  border-right:3px solid #00CD00;
+
 }
 
 #asr_begin {
-  font-size: 5em;
-  font-weight: 900;
-  text-align: center;
-  vertical-align: middle;
-  min-height: 150px;
-  line-height: 150px;
-  color:#00CD00;
-  background-color:#000;
-  border-radius: 11px;
-  border-top:3px solid #00CD00;
-  border-bottom:3px solid #00CD00; 
-  border-left:3px solid #00CD00; 
-  border-right:3px solid #00CD00;
+
 }
 
 #asr_jamaat {
-  font-size: 5em;
-  font-weight: 900;
-  text-align: center;
-  vertical-align: middle;
-  min-height: 150px;
-  line-height: 150px;
-  color:#33b5ff;
-  background-color:#000;
-  border-radius: 11px;
-  border-top:3px solid #33b5ff;
-  border-bottom:3px solid #33b5ff; 
-  border-left:3px solid #33b5ff; 
-  border-right:3px solid #33b5ff;
+
 }
 
 #sunset {
-  font-size: 6.5em;
-  font-weight: 900;
-  text-align: center;
-  vertical-align: middle;
-  min-height: 150px;
-  line-height: 150px;
-  color:#FF0000;
-  background-color:#000;
-  border-radius: 11px;
-  border-top:3px solid #FF0000;
-  border-bottom:3px solid #FF0000; 
-  border-left:3px solid #FF0000; 
-  border-right:3px solid #FF0000;
+
 }
 
 #sunset_begin {
-  font-size: 5em;
-  font-weight: 900;
-  text-align: center;
-  vertical-align: middle;
-  min-height: 150px;
-  line-height: 150px;
-  color:#FF0000;
-  background-color:#000;
-  border-radius: 11px;
-  border-top:3px solid #FF0000;
-  border-bottom:3px solid #FF0000; 
-  border-left:3px solid #FF0000; 
-  border-right:3px solid #FF0000;
+
 }
 
 #maghrib {
-  font-size: 5.9em;
-  font-weight: 900;
-  text-align: center;
-  vertical-align: middle;
-  min-height: 150px;
-  line-height: 150px;
-  color:#00CD00;
-  background-color:#000;
-  border-radius: 11px;
-  border-top:3px solid #00CD00;
-  border-bottom:3px solid #00CD00; 
-  border-left:3px solid #00CD00; 
-  border-right:3px solid #00CD00;
+
 }
 
 #maghrib_begin {
-  font-size: 5em;
-  font-weight: 900;
-  text-align: center;
-  vertical-align: middle;
-  min-height: 150px;
-  line-height: 150px;
-  color:#00CD00;
-  background-color:#000;
-  border-radius: 11px;
-  border-top:3px solid #00CD00;
-  border-bottom:3px solid #00CD00; 
-  border-left:3px solid #00CD00; 
-  border-right:3px solid #00CD00;
+
 }
 
 #maghrib_jamaat {
-  font-size: 5em;
-  font-weight: 900;
-  text-align: center;
-  vertical-align: middle;
-  min-height: 150px;
-  line-height: 150px;
-  color:#33b5ff;
-  background-color:#000;
-  border-radius: 11px;
-  border-top:3px solid #33b5ff;
-  border-bottom:3px solid #33b5ff; 
-  border-left:3px solid #33b5ff; 
-  border-right:3px solid #33b5ff;
+
 }
 
 #isha {
-  font-size: 6.5em;
-  font-weight: 900;
-  text-align: center;
-  vertical-align: middle;
-  min-height: 150px;
-  line-height: 150px;
-  color:#00CD00;
-  background-color:#000;
-  border-radius: 11px;
-  border-top:3px solid #00CD00;
-  border-bottom:3px solid #00CD00; 
-  border-left:3px solid #00CD00; 
-  border-right:3px solid #00CD00;
+
 }
 
 #isha_begin {
-  font-size: 5em;
-  font-weight: 900;
-  text-align: center;
-  vertical-align: middle;
-  min-height: 150px;
-  line-height: 150px;
-  color:#00CD00;
-  background-color:#000;
-  border-radius: 11px;
-  border-top:3px solid #00CD00;
-  border-bottom:3px solid #00CD00; 
-  border-left:3px solid #00CD00; 
-  border-right:3px solid #00CD00;
+
 }
 
 #isha_jamaat {
-  font-size: 5em;
-  font-weight: 900;
-  text-align: center;
-  vertical-align: middle;
-  min-height: 150px;
-  line-height: 150px;
-  color:#33b5ff;
-  background-color:#000;
-  border-radius: 11px;
-  border-top:3px solid #33b5ff;
-  border-bottom:3px solid #33b5ff; 
-  border-left:3px solid #33b5ff; 
-  border-right:3px solid #33b5ff;
+
 }
 
 #jumu-ah_jamaat {
-  font-size: 5em;
-  font-weight: 900;
-  text-align: center;
-  vertical-align: middle;
-  min-height: 150px;
-  line-height: 150px;
-  color:#33b5ff;
-  background-color:#000;
-  border-radius: 11px;
-  border-top:3px solid #33b5ff;
-  border-bottom:3px solid #33b5ff; 
-  border-left:3px solid #33b5ff; 
-  border-right:3px solid #33b5ff;
+
 }
 
 #eid_jamaat {
-  font-size: 5em;
-  font-weight: 900;
-  text-align: center;
-  vertical-align: middle;
-  min-height: 150px;
-  line-height: 150px;
-  color:#33b5ff;
-  background-color:#000;
-  border-radius: 11px;
-  border-top:3px solid #33b5ff;
-  border-bottom:3px solid #33b5ff; 
-  border-left:3px solid #33b5ff; 
-  border-right:3px solid #33b5ff;
+
 }
 

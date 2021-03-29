@@ -1,0 +1,344 @@
+/* 
+    color 1: #52071e 
+    color 2: #380412
+*/
+
+@font-face {
+    font-family: 'MyriadProRegular';
+    src: url('fonts/MyriadProRegular.eot');
+    src: url('fonts/MyriadProRegular.eot') format('embedded-opentype'),
+         url('fonts/MyriadProRegular.woff2') format('woff2'),
+         url('fonts/MyriadProRegular.woff') format('woff'),
+         url('fonts/MyriadProRegular.ttf') format('truetype'),
+         url('fonts/MyriadProRegular.svg#MyriadProRegular') format('svg');
+}
+
+body {
+    background: linear-gradient(to left, #52071e 50%, #380412 50%);
+    width: 100vw;
+    height:100vh;
+    font-family: 'MyriadProRegular';
+    color: #fff;
+    margin: 0;
+    padding: 50px;
+}
+
+#logo {
+    filter: brightness(0) invert(1);
+    left: 50%;
+    position: absolute;
+}
+
+.italic {
+    font-style: italic;
+    font-weight: 100;
+}
+
+.bold {
+    font-weight: bolder;
+}
+
+.text-info {
+    font-size: 50px;
+}
+
+.next-prayer {
+    clear: both;
+    text-align: center;
+    position: relative;
+    left: -60px;
+    font-size: 30px;
+    padding-top: 2em;
+}
+
+datetime {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    width: 220px;
+    padding: 15px;
+    background-color: white;
+    float: left;
+    font-weight: 900;
+}
+
+#time {
+    font-size: 4.5em;
+    min-height: 80px;
+    max-width: 350px;
+    color: #380412;
+    background-color: #fff;
+}
+
+#date {
+    font-size: 2.5em;
+    float: left;
+    clear: left;
+}
+
+#islamic {
+    font-size: 2.5em;
+    float: left;
+    clear: left;
+}
+
+
+#title {
+    left: 36%;
+    position: absolute;
+    font-weight: bolder;
+    font-size: 5em;
+    top:-5px;
+}
+
+#salah {
+
+}
+
+#begin {
+    position: relative;
+    right: -60px;
+    top: 120px;
+    font-weight: bolder;
+    font-size: 2em;
+}
+
+#jamaat {
+    position: relative;
+    right: -170px;
+    top: 120px;
+    font-weight: bolder;
+    font-size: 2em;
+}
+
+#suhoor {
+    text-align: left;
+    position: relative;
+    left: 10px;
+    top: 120px;
+    font-weight: bolder;
+    font-size: 2em;
+}
+
+#suhoor_end {
+    position: relative;
+    right: -170px;
+    top: 120px;
+    font-weight: bolder;
+    font-size: 2em;
+}
+
+#fajr {
+    text-align: left;
+    position: relative;
+    left: 10px;
+    top: 120px;
+    font-weight: bolder;
+    font-size: 2em;
+}
+
+#fajr_begin {
+    position: relative;
+    right: -60px;
+    top: 120px;
+    font-weight: bolder;
+    font-size: 2em;
+}
+
+#fajr_jamaat {
+    position: relative;
+    right: -170px;
+    top: 120px;
+    font-weight: bolder;
+    font-size: 2em;
+}
+
+#sunrise {
+    text-align: left;
+    position: relative;
+    left: 10px;
+    top: 120px;
+    font-weight: bolder;
+    font-size: 2em;
+}
+
+#sunrise_begin {
+    position: relative;
+    right: -170px;
+    top: 120px;
+    font-weight: bolder;
+    font-size: 2em;
+}
+
+#zawaal  {
+    text-align: left;
+    position: relative;
+    left: 10px;
+    top: 120px;
+    font-weight: bolder;
+    font-size: 2em;
+}
+
+#zawaal_begin  {
+    position: relative;
+    right: -170px;
+    top: 120px;
+    font-weight: bolder;
+    font-size: 2em;
+}
+
+#zuhr {
+    text-align: left;
+    position: relative;
+    left: 10px;
+    top: 120px;
+    font-weight: bolder;
+    font-size: 2em;
+}
+
+#zuhr_begin {
+    position: relative;
+    right: -60px;
+    top: 120px;
+    font-weight: bolder;
+    font-size: 2em;
+}
+
+#zuhr_jamaat {
+    position: relative;
+    right: -170px;
+    top: 120px;
+    font-weight: bolder;
+    font-size: 2em;
+}
+
+#asr {
+    text-align: left;
+    position: relative;
+    left: 10px;
+    top: 120px;
+    font-weight: bolder;
+    font-size: 2em;
+}
+
+#asr_begin {
+    position: relative;
+    right: -60px;
+    top: 120px;
+    font-weight: bolder;
+    font-size: 2em;
+}
+
+#asr_jamaat {
+    position: relative;
+    right: -170px;
+    top: 120px;
+    font-weight: bolder;
+    font-size: 2em;
+}
+
+#sunset {
+    text-align: left;
+    position: relative;
+    left: 10px;
+    top: 120px;
+    font-weight: bolder;
+    font-size: 2em;
+}
+
+#sunset_begin {
+    position: relative;
+    right: -170px;
+    top: 120px;
+    font-weight: bolder;
+    font-size: 2em;
+}
+
+#maghrib {
+    text-align: left;
+    position: relative;
+    left: 10px;
+    top: 120px;
+    font-weight: bolder;
+    font-size: 2em;
+}
+
+#maghrib_begin {
+    position: relative;
+    right: -60px;
+    top: 120px;
+    font-weight: bolder;
+    font-size: 2em;
+}
+
+#maghrib_jamaat {
+    position: relative;
+    right: -170px;
+    top: 120px;
+    font-weight: bolder;
+    font-size: 2em;
+}
+
+#isha {
+    text-align: left;
+    position: relative;
+    left: 10px;
+    top: 120px;
+    font-weight: bolder;
+    font-size: 2em;
+}
+
+#isha_begin {
+    position: relative;
+    right: -60px;
+    top: 120px;
+    font-weight: bolder;
+    font-size: 2em;
+}
+
+#isha_jamaat {
+    position: relative;
+    right: -170px;
+    top: 120px;
+    font-weight: bolder;
+    font-size: 2em;
+}
+
+#jumu-ah_jamaat {
+
+}
+
+#eid_jamaat {
+
+}
+
+.daily-prayer-times 
+    font-size: 2em;
+    text-align: right;
+    margin: 0px auto;
+
+
+.daily-prayer-times th 
+    font-weight: bolder;
+    font-size: 0.9em;
+
+
+.daily-prayer-times td,  .daily-prayer-times th 
+    margin: 100px;
+
+
+.daily-prayer-times th:first-child 
+    font-size: 1.2em;
+    text-align: left;
+
+
+.daily-prayer-times .mithl-text
+    font-size: 0.5em;
+    max-width: 50px;
+
+
+.daily-prayer-times td
+    min-width: 100px;
+
+
+.daily-prayer-times td:last-child
+    font-weight: bolder;
