@@ -6,6 +6,12 @@
 
 /* navbar */
 
+.img-responsive{
+	width: 10%;
+	height: 10%;
+
+}
+
 .navbar-nav{
 	margin-right: 0 !important;
 	padding-right: 100px;
@@ -36,7 +42,7 @@
 }
 
 /* banner */
-
+*
 #banner-container{
 	background-color: #023020;
 	color: white !important;
@@ -106,7 +112,7 @@
 
 #product{
 	padding-top: 80px;
-	padding-bottom: 80px;
+*	padding-bottom: 80px;
 }
 
 #product h1{
