@@ -18,7 +18,7 @@
 }
 
 .navbar{
-	background-color: #023020;
+	background-color: #244f39;
 	color: white !important;
 }
 
@@ -32,9 +32,9 @@
 
 .navbar-brand{
 	color: white !important;
-	padding-left: 150px;
+	padding-left: 70px;
 	font-weight: bold; 
-	font-size: 50px;
+	font-size: 30px;
 }
 
 #navbar button{
@@ -46,8 +46,8 @@
 #banner-container{
 	background-color: #023020;
 	color: white !important;
-	padding-top: 80px;
-	padding-bottom: 80px;
+	padding-top: 10px;
+	padding-bottom: 10px;
 	
 }
 
@@ -65,7 +65,7 @@
 }
 
 #banner-row a{
-	background-color: white !important;
+	background-color: #023020 !important;
 	color: black !important;
 	border: none;
 	margin-left: 20px;
@@ -77,14 +77,14 @@
 }
 /* service */
 #service{
-	background-color: grey !important;
+	background-color: red !important;
 	color: white !important;
-	padding-top: 80px;
+	padding-top: 40px;
 	padding-bottom: 80px;
 }
 
 #service h1{
-	padding-bottom: 70px;
+	padding-bottom: 20px;
 }
 
 /* about */
@@ -112,7 +112,7 @@
 
 #product{
 	padding-top: 80px;
-*	padding-bottom: 80px;
+	padding-bottom: 80px;
 }
 
 #product h1{
@@ -130,12 +130,12 @@
 /* social */
 
 #social{
-	padding-top: 80px;
-	padding-bottom: 80px;
+	padding-top: 10px;
+	padding-bottom: 10px;
 }
 
 #social h1{
-	padding-bottom: 70px;
+	padding-bottom: 10px;
 }
 
 .social-col a:hover img{
