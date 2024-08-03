@@ -1,0 +1,309 @@
+    <header>
+        <div class="logo">
+            <img src="barry.png" alt="Logo">
+        </div>
+
+        <div class="header-content"></div>
+            <h1>Barry Masjid & Islamic Centre</h1>
+                <table>
+                    <tr>
+                    <th>Company</th>
+                    <th>Contact</th>
+                    <th>Country</th>
+                    </tr>
+                    <tr>
+                    <td>Alfreds Futterkiste</td>
+                    <td>Maria Anders</td>
+                    <td>Germany</td>
+                    </tr>
+                    <tr>
+                    <td>Centro comercial Moctezuma</td>
+                    <td>Francisco Chang</td>
+                    <td>Mexico</td>
+                    </tr>
+                </table> 
+            </div>
+
+
+        </div>
+    </header>
+
+
+
+    .logo {
+        display: flex;
+        align-items: left;
+        justify-content: left;
+        max-width: 100px;
+        margin-right: 10px;
+        width: 10%;
+        height: 10%;
+    }
+
+
+    function updateDateTime() {
+        const dateTimeContainer = document.getElementById('dateTimeContainer');
+        const now = new Date();
+    
+        const options = {
+            weekday: 'short',
+            year: 'numeric',
+            month: 'short',
+            day: 'numeric',
+            hour: '2-digit',
+            minute: '2-digit',
+            second: '2-digit'
+        };
+    
+        const formattedDateTime = now.toLocaleDateString('en-US', options);
+    
+        dateTimeContainer.textContent = formattedDateTime;
+    }
+    
+    setInterval(updateDateTime, 1000);
+    
+    // Initial call to display the date and time immediately when the page loads
+    updateDateTime();
+
+    #dateTimeContainer {
+        font-size: 1.5em;
+        margin-top: 10px;
+    }
+
+
+
+
+
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    
+    header {
+        background-color: #244f39;
+        color: white;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+    }
+    
+    .header-content {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    
+    .logo {
+        width: 100px;
+        height: auto;
+    }
+    
+    
+    table {
+        width: 10%;
+        margin-top: 10px;
+    }
+    
+    th, td {
+        padding: 5px;
+        text-align: center;
+    }
+    
+    nav {
+        background-color: #023020;
+        width: 100%;
+    }
+    
+    nav ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+    
+    nav ul li {
+        flex: 1;
+        min-width: 120px;
+        text-align: center;
+    }
+    
+    nav ul li a {
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+    }
+    
+    nav ul li a:hover {
+        background-color: #6f6f6f;
+    }
+    
+    .menu-icon {
+        display: none;
+        cursor: pointer;
+        padding: 14px 16px;
+        color: white;
+    }
+    
+    main {
+        padding: 1em;
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+    
+    section {
+        margin-bottom: 2em;
+    }
+    
+    footer {
+        background-color: #244f39;
+        color: white;
+        text-align: center;
+        padding: 1em;
+        position: relative;
+        bottom: 0;
+        width: 100%;
+    }
+    
+    @media (max-width: 768px) {
+        .header-content {
+            flex-direction: column;
+            align-items: center;
+        }
+        nav ul {
+            flex-direction: column;
+            display: none;
+        }
+        nav ul li {
+            text-align: left;
+        }
+        .menu-icon {
+            display: block;
+        }
+    }
+    
+    @media (max-width: 480px) {
+        nav ul li a {
+            padding: 10px 12px;
+        }
+        header, footer {
+            padding: 0.5em 1em;
+        }
+        main {
+            padding: 1em;
+        }
+        .logo {
+            width: 80px;
+        }
+        th, td {
+            padding: 3px;
+        }
+        table {
+            font-size: 0.9em;
+        }
+    }
+    
+
+
+
+
+
+
+
+
+    document.addEventListener('DOMContentLoaded', () => {
+        fetch('elm-prayer-times-2018.csv')
+            .then(response => response.text())
+            .then(data => {
+                const prayerTimes = parseCSV(data);
+                const currentDate = getCurrentDate();
+                const todayPrayerTimes = prayerTimes.find(prayer => prayer.Date === currentDate);
+    
+                if (todayPrayerTimes) {
+                    updateTime('fajr', 'begins', todayPrayerTimes.FajrBegins);
+                    updateTime('fajr', 'jamat', todayPrayerTimes.FajrJamat);
+                    updateTime('zuhr', 'begins', todayPrayerTimes.ZuhrBegins);
+                    updateTime('zuhr', 'jamat', todayPrayerTimes.ZuhrJamat);
+                    updateTime('asr', 'begins', todayPrayerTimes.AsrBegins);
+                    updateTime('asr', 'jamat', todayPrayerTimes.AsrJamat);
+                    updateTime('maghrib', 'begins', todayPrayerTimes.MaghribBegins);
+                    updateTime('maghrib', 'jamat', todayPrayerTimes.MaghribJamat);
+                    updateTime('isha', 'begins', todayPrayerTimes.IshaBegins);
+                    updateTime('isha', 'jamat', todayPrayerTimes.IshaJamat);
+                }
+            })
+            .catch(error => console.error('Error fetching the CSV file:', error));
+    });
+    
+    function parseCSV(data) {
+        const rows = data.split('\n').map(row => row.split(','));
+        const headers = rows[0];
+        return rows.slice(1).map(row => {
+            return headers.reduce((acc, header, i) => {
+                acc[header] = row[i];
+                return acc;
+            }, {});
+        });
+    }
+    
+    function getCurrentDate() {
+        const now = new Date();
+        return now.toISOString().split('T')[0];
+    }
+    
+    function updateTime(prayer, type, time) {
+        const selector = `[data-time="${prayer}-${type}"]`;
+        const element = document.querySelector(selector);
+        if (element) {
+            element.textContent = time;
+        }
+    }
+    
+
+
+
+
+
+
+    document.addEventListener('DOMContentLoaded', () => {
+        fetch('elm-prayer-times-2018.csv')
+            .then(response => response.text())
+            .then(data => {
+                const prayerTimes = parseCSV(data);
+                const currentDate = getCurrentDate();
+                const todayPrayerTimes = prayerTimes.find(prayer => prayer.Date === currentDate);
+    
+                if (todayPrayerTimes) {
+                    updateTime('fajr', 'begins', todayPrayerTimes.FajrBegins);
+                    updateTime('fajr', 'jamat', todayPrayerTimes.FajrJamat);
+                    updateTime('zuhr', 'begins', todayPrayerTimes.ZuhrBegins);
+                    updateTime('zuhr', 'jamat', todayPrayerTimes.ZuhrJamat);
+                    updateTime('asr', 'begins', todayPrayerTimes.AsrBegins);
+                    updateTime('asr', 'jamat', todayPrayerTimes.AsrJamat);
+                    updateTime('maghrib', 'begins', todayPrayerTimes.MaghribBegins);
+                    updateTime('maghrib', 'jamat', todayPrayerTimes.MaghribJamat);
+                    updateTime('isha', 'begins', todayPrayerTimes.IshaBegins);
+                    updateTime('isha', 'jamat', todayPrayerTimes.IshaJamat);
+                }
+            })
+            .catch(error => console.error('Error fetching the CSV file:', error));
+    });
+    
+    function parseCSV(data) {
+        const rows = data.split('\n').map(row => row.split(','));
+        const headers = rows[0];
+        return rows.slice(1).map(row => {
+            return headers.reduce((acc, header, i) => {
+                acc[header] = row[i];
+                return acc;
+            }, {});
+        });
+    }
