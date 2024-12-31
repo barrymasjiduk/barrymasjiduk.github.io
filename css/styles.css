@@ -43,28 +43,46 @@
 
 /* banner */
 *
-#banner-container{
-	background-color: #023020;
+
+#banner{
+	background-color: grey !important;
 	color: white !important;
 	padding-top: 80px;
 	padding-bottom: 80px;
 	
 }
 
-#banner-row img{
+#banner h1{
+	padding-bottom: 70px;
+}
+
+.transparent-iframe {
+            background-color: gray !important;
+            border: none;
+}
+
+banner-container{
+	background-color: grey !important;
+	color: white !important;
+	padding-top: 80px;
+	padding-bottom: 80px;
+	
+}
+
+banner-row img{
 	max-width: 70%;
 	height: auto;
 	display: block;
 	padding-left: 30px;
 }
 
-#banner-row h3, p{
+banner-row h3, p{
 	padding-left: 20px;
 	padding-top: 20px;
 	text-align: center;
 }
 
-#banner-row a{
+banner-row a{
 	background-color: white !important;
 	color: black !important;
 	border: none;
@@ -72,19 +90,19 @@
 	margin-top: 20px;
 	
 }
-#banner-col{
+banner-col{
 	padding-left: 20px;
 }
 /* service */
 #service{
 	background-color: grey !important;
 	color: white !important;
-	padding-top: 80px;
+	padding-top: 10px;
 	padding-bottom: 80px;
 }
 
 #service h1{
-	padding-bottom: 70px;
+	padding-bottom: 50px;
 }
 
 /* about */
