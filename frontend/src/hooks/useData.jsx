@@ -153,7 +153,18 @@ export function iqamaCalendar(month) {
 
 // Returns the length of a given month, how many days, useful to avoid leap year issues and 30 vs 31 vs 28 on the timetable
 export function getMonthLength(month) {
-  const days = data.rawdata.calendar[month];
-  const length = Object.keys(days).length;
-  return length;
+  // month: 0 = Jan, 1 = Feb, etc.
+  const now = new Date();
+  const year = now.getFullYear();
+
+  // Handle February manually
+  if (month === 1) { // February
+    const isLeap = (year % 4 === 0 && year % 100 !== 0) || (year % 400 === 0);
+    return isLeap ? 29 : 28;
+  }
+
+  // For other months, use standard logic
+  const thirtyDayMonths = [3, 5, 8, 10]; // April, June, Sept, Nov
+  if (thirtyDayMonths.includes(month)) return 30;
+  return 31;
 }

@@ -51,8 +51,8 @@ const Timetable = () => {
 
   const items = [
     { color: suhoorEnd, label: "Stop eating before Suhoor end when fasting" },
+    { color: beginColour, label: "Mandatory Salah to be perfomed daily" },
     { color: cantPray, label: "No Salah should be performed at these times" },
-    { color: beginColour, label: "Mandatory Salah to be perfomed daily" }
   ];
 
   //retrieves a 2D array of all the times for the month
@@ -64,6 +64,41 @@ const Timetable = () => {
     }
     return monthTimes;
   }, [currentMonth]);
+
+  const isSpecialDate = (month, day) => {
+    const year = new Date().getFullYear();
+
+    // Ensure month is 0-based
+    const m = month > 11 ? 11 : month < 0 ? 0 : month;
+    const isZeroBased = months[0] === "January";
+    const monthIndex = isZeroBased ? m : m - 1;
+
+    // 1️⃣ Leap Day (Feb 29)
+    const isLeap = (year % 4 === 0 && year % 100 !== 0) || (year % 400 === 0);
+    if (monthIndex === 1 && day === 29 && isLeap) return true;
+
+    // 2️⃣ Find last Sunday in March (BST starts → mark all days after)
+    if (monthIndex === 2) {
+      const lastDayOfMarch = new Date(year, 3, 0).getDate(); // 31
+      const lastSundayOfMarch = new Date(year, 2, lastDayOfMarch);
+      while (lastSundayOfMarch.getDay() !== 0) {
+        lastSundayOfMarch.setDate(lastSundayOfMarch.getDate() - 1);
+      }
+      if (day >= lastSundayOfMarch.getDate()) return true;
+    }
+
+    // 3️⃣ Find last Sunday in October (BST ends → mark all days after)
+    if (monthIndex === 9) {
+      const lastDayOfOctober = new Date(year, 10, 0).getDate(); // 31
+      const lastSundayOfOctober = new Date(year, 9, lastDayOfOctober);
+      while (lastSundayOfOctober.getDay() !== 0) {
+        lastSundayOfOctober.setDate(lastSundayOfOctober.getDate() - 1);
+      }
+      if (day >= lastSundayOfOctober.getDate()) return true;
+    }
+
+    return false;
+  };
 
 
   return (
@@ -132,6 +167,7 @@ const Timetable = () => {
                     {/* Date */}
                     <TableCell className="text-[10px] md:text-xs border-r-1 border-black">
                       {rowIndex + 1}
+                      {isSpecialDate(currentMonth, rowIndex + 1) && <span className="text-red-600">*</span>}
                     </TableCell>
 
                     {/* Times */}

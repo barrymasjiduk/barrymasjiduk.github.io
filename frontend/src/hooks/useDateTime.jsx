@@ -45,7 +45,7 @@ const useDateTime = () => {
 
 
   //exports
-  const dateOnly = dateTime.toLocaleString("en-GB", {day: "2-digit"});
+  const dateOnly = dateTime.toLocaleString("en-GB", {day: "numeric"});
   const monthNum = months.indexOf(monthOnly);
   const hSuffix = getOrdinalSuffix(hDate);
   const formattedHijri = `${hDay} ${hDate}${hSuffix} ${monthName} ${year}`
@@ -66,7 +66,7 @@ const useDateTime = () => {
     hour12: true
   }).replace(/am|pm/, match => match.toUpperCase());
 
-  return { dateOnly, monthNum, formattedGregorian, formattedHijri, time, months, monthName };
+  return { dateOnly, monthNum, formattedGregorian, formattedHijri, time, months, monthName, monthOnly };
 };
 
 export default useDateTime;

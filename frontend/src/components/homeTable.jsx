@@ -19,7 +19,7 @@ import { useNavigate } from "react-router-dom";
 import { ArrowRight } from "lucide-react";
 
 const HomeTable = ({header = true}) => {
-  const { monthNum, dateOnly, monthName, time } = useDateTime();
+  const { monthNum, dateOnly, monthName, time, monthOnly } = useDateTime();
   const [currentDate] = React.useState(dateOnly);
 
   const navigate = useNavigate();
@@ -270,9 +270,9 @@ const currentSalahIndex = getCurrentSalahIndex();
           </Button>
           <Button
             className="w-full sm:w-auto flex-1 md:text-sm text-[10px] whitespace-normal text-center px-2 py-2"
-            onClick={() => navigate("/timetable")}
+            onClick={() => window.open("/november.pdf", "_blank")}
           >
-            Download Timetable PDF
+            Download {monthOnly} Timetable
           </Button>
           {showThirdButton && (
             <Button
