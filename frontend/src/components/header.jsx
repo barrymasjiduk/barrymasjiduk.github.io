@@ -22,10 +22,11 @@ const Header = () => {
   
           {/* Date & Time */}
           <div className="text-white text-right">
-            <div className="text-[7.5px] md:text-xs">{formattedHijri}</div>
-            <div className="text-[7.5px] md:text-xs">{formattedGregorian}</div>
-            <div className="text-[7.5px] md:text-sm font-bold">{time}</div>
+            <div className="text-[12px] md:text-2xl font-bold">{time}</div>
           </div>
+        </div>
+        <div className="text-white text-center align-middle mt-2">
+          <div className="text-[10px] md:text-lg">{formattedHijri} | {formattedGregorian}</div>
         </div>
       </header>
     );
