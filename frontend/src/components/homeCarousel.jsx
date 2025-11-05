@@ -26,12 +26,12 @@ const  cards = [
     "description": "Click to hear live athan from Barry Masjid.",
     "link":"/live"
   },
-  {
-    "image": classes,
-    "title": "Qur'an Classes",
-    "description": "Find out more about our Qur'an classes and how to register.",
-    "link":"/madrassah"
-  },
+//   {
+//     "image": classes,
+//     "title": "Qur'an Classes",
+//     "description": "Find out more about our Qur'an classes and how to register.",
+//     "link":"/madrassah"
+//   },
   {
     "image": money,
     "title": "Support the Masjid",

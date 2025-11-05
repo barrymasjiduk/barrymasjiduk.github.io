@@ -9,7 +9,7 @@ const links = [
   { name: "Timetable", path: "/timetable" },
   { name: "Live", path: "/live" },
   { name: "Donate", path: "/donate" },
-  { name: "Madrassah", path: "/madrassah" },
+  // { name: "Madrassah", path: "/madrassah" },
   { name: "Contact", path: "/contact" },
 ];
 
