@@ -64,9 +64,7 @@ const Contact = () => {
                 <span className="text-sm md:text-base">
                   332 Holton Road, Barry, Vale of Glamorgan,
                   <br />
-                  Wales, United Kingdom,
-                  <br />
-                  CF63 4HY
+                  Wales, United Kingdom, CF63 4HY.
                 </span>
               </div>
             </div>
