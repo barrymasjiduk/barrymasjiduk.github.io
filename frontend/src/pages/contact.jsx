@@ -62,11 +62,9 @@ const Contact = () => {
               <div className="flex items-start gap-4">
                 <MapPin className="text-primary w-6 h-6 mt-0.5" />
                 <span className="text-sm md:text-base">
-                  332 Holton Road Barry, Vale of Glamorgan
+                  332 Holton Road, Barry, Vale of Glamorgan,
                   <br />
-                  Wales, United Kingdom
-                  <br />
-                  CF63 4HY
+                  Wales, United Kingdom, CF63 4HY.
                 </span>
               </div>
             </div>

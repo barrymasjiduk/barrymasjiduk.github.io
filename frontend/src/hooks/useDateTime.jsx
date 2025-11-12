@@ -22,8 +22,9 @@ const useDateTime = () => {
   const hijriDays = ["Al-ithnayn", "Ath-thulathaa", "Al-arbi'aa", "Al-khamees", "Al-jumu'ah", "As-sabt", "Al-Ahad"]
 
   //other variables to work out date
-  const weekday = dateTime.toLocaleDateString("en-GB", {weekday: "long",})
+  const weekdayOnly = dateTime.toLocaleDateString("en-GB", {weekday: "long",})
   const monthOnly = dateTime.toLocaleString("en-GB", {month: "long"});
+  const yearOnly = dateTime.toLocaleString("en-GB", {year: "numeric"});
 
   const getOrdinalSuffix = (day) => {
     if (day > 3 && day < 21) return "th"; // 4th-20th
@@ -40,7 +41,7 @@ const useDateTime = () => {
   const hDate = todayHijri.getDate();
   const monthIndex = todayHijri.getMonth();
   const year = todayHijri.getFullYear();
-  const hDay = hijriDays[days.indexOf(weekday)];
+  const hDay = hijriDays[days.indexOf(weekdayOnly)];
   const monthName = hijriMonths[monthIndex-1];
 
 
@@ -66,7 +67,7 @@ const useDateTime = () => {
     hour12: true
   }).replace(/am|pm/, match => match.toUpperCase());
 
-  return { dateOnly, monthNum, formattedGregorian, formattedHijri, time, months, monthName, monthOnly };
+  return { dateOnly, monthNum, formattedGregorian, formattedHijri, time, months, monthName, monthOnly, yearOnly, weekdayOnly };
 };
 
 export default useDateTime;
