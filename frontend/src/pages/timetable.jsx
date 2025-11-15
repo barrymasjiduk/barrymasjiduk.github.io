@@ -119,7 +119,7 @@ const Timetable = () => {
       <div className="md:overflow-visible overflow-x-hidden">
         <div className="flex justify-center">
           {/* Zoom on small screens; normal from md+ */}
-          <div className="inline-block [zoom:0.44] md:[zoom:1]">
+          <div className="inline-block [zoom:0.39] md:[zoom:1]">
             
           <div className="flex gap-4 justify-center py-4">
             {items.map((item, i) => (
