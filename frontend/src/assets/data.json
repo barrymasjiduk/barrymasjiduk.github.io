@@ -1,5 +1,6 @@
 {
   "rawdata": {
+    "test": true,
     "showCityInTitle": false,
     "showLogo": true,
     "showPrayerTimesOnMessageScreen": true,
