@@ -13,10 +13,11 @@ import Live from "./pages/live";
 import Error from "./pages/error";
 import Screen from "./pages/screen";
 import Donation from "./pages/donation";
+import AdminEditor from "./pages/admin";
 
 function App() {
   const location = useLocation();
-  const noLayoutPages = ["/screen12345"];
+  const noLayoutPages = ["/screen12345", "/admin"];
   const hideLayout = noLayoutPages.includes(location.pathname);
 
   return (
@@ -34,6 +35,7 @@ function App() {
           <Route path="/madrassah" element={<Dev />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/screen12345" element={<Screen />} />
+          <Route path="/admin" element={<AdminEditor />} />
           <Route path="*" element={<Error />} />
         </Routes>
       </main>
