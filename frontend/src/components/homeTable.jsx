@@ -266,22 +266,20 @@ const currentSalahIndex = getCurrentSalahIndex();
             className="w-full sm:w-auto flex-1 md:text-sm text-[10px] whitespace-normal text-center px-2 py-2"
             onClick={() => navigate("/timetable")}
           >
-            View Full Timetable
+            View Full Timetable online
           </Button>
           <Button
             className="w-full sm:w-auto flex-1 md:text-sm text-[10px] whitespace-normal text-center px-2 py-2"
             onClick={() => window.open("/February-2026.pdf", "_blank")}
           >
-            Download {monthOnly} {yearOnly} Timetable
+            Download {monthOnly} {yearOnly} Timetable PDF
           </Button>
-          {showThirdButton && (
-            <Button
-              className="w-full sm:w-auto flex-1 md:text-sm text-[10px] whitespace-normal text-center px-2 py-2"
-              onClick={() => navigate("/special-page")}
-            >
-              Download Ramadan Timetable PDF
-            </Button>
-          )}
+          <Button
+            className="w-full sm:w-auto flex-1 md:text-sm text-[10px] whitespace-normal text-center px-2 py-2"
+            onClick={() => window.open("/Ramadan-2026.pdf", "_blank")}
+          >
+            Download Ramadan {yearOnly} Timetable PDF
+          </Button>
         </div>
         }
       </div>
