@@ -270,13 +270,13 @@ const currentSalahIndex = getCurrentSalahIndex();
           </Button>
           <Button
             className="w-full sm:w-auto flex-1 md:text-sm text-[10px] whitespace-normal text-center px-2 py-2"
-            onClick={() => window.open("/February-2026.pdf", "_blank")}
+            onClick={() => window.open("/February-2026-2-Sided.pdf", "_blank")}
           >
             Download {monthOnly} {yearOnly} Timetable
           </Button>
           <Button
             className="w-full sm:w-auto flex-1 md:text-sm text-[10px] whitespace-normal text-center px-2 py-2"
-            onClick={() => window.open("/Ramadan-2026.pdf", "_blank")}
+            onClick={() => window.open("/Ramadan-Fitrana-2026-2-Sided.pdf", "_blank")}
           >
             Download Ramadan {yearOnly} Timetable
           </Button>
