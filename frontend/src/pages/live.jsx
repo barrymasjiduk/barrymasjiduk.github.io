@@ -33,7 +33,7 @@ const Live = () => {
             <iframe
               title="Barry Masjid Live"
               className="absolute inset-0 h-full w-full"
-              src="https://mymasjid.uk/miniplayer/barrymasjidislamiccentre"
+              src="https://mymasjid.uk/miniplayer/barrymasjid-wales-uk"
             />
           </div>
 
@@ -43,7 +43,7 @@ const Live = () => {
               Having issues? Try opening in a new tab.
             </span>
             <a
-              href="https://mymasjid.uk/live/barrymasjidislamiccentre"
+              href="https://mymasjid.uk/live/barrymasjid-wales-uk"
               target="_blank"
               rel="noreferrer"
               className="text-xs md:text-sm font-medium text-primary hover:underline"
