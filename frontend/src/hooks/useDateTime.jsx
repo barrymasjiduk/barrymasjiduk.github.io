@@ -2,7 +2,6 @@
 //hook for all things date and time related
 
 import { useEffect, useState } from "react";
-import HijriDate from "hijri-date";
 
 const useDateTime = () => {
   const [dateTime, setDateTime] = useState(new Date());
@@ -37,10 +36,14 @@ const useDateTime = () => {
   };
 
   //variables for full Hijri date
-  const todayHijri = new HijriDate();
-  const hDate = todayHijri.getDate();
-  const monthIndex = todayHijri.getMonth();
-  const year = todayHijri.getFullYear();
+  const hijriParts = new Intl.DateTimeFormat('en-u-ca-islamic-umalqura', {
+    day: 'numeric',
+    month: 'numeric',
+    year: 'numeric',
+  }).formatToParts(dateTime);
+  const hDate = Number(hijriParts.find(p => p.type === 'day').value);
+  const monthIndex = Number(hijriParts.find(p => p.type === 'month').value);
+  const year = Number(hijriParts.find(p => p.type === 'year').value);
   const hDay = hijriDays[days.indexOf(weekdayOnly)];
   const monthName = hijriMonths[monthIndex-1];
 
@@ -71,3 +74,15 @@ const useDateTime = () => {
 };
 
 export default useDateTime;
+
+// ─── Fallback: hijri-date package implementation ───────────────────────────
+// To restore: uncomment below, remove the Intl block above, and re-add:
+//   import HijriDate from "hijri-date";
+//
+// const HIJRI_OFFSET = 0; // adjust to -1, 0, or +1 for your region
+// const todayHijri = new HijriDate();
+// if (HIJRI_OFFSET > 0) for (let i = 0; i < HIJRI_OFFSET; i++) todayHijri.addDay();
+// if (HIJRI_OFFSET < 0) for (let i = 0; i < -HIJRI_OFFSET; i++) todayHijri.subtractDay();
+// const hDate = todayHijri.getDate();
+// const monthIndex = todayHijri.getMonth();
+// const year = todayHijri.getFullYear();
