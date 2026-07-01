@@ -17,6 +17,7 @@
     "alwaysDisplayHhMmFormat": false,
     "iqamaDisplayTime": 11,
     "iqamaBip": true,
+    "iqamaBipSound": "bip",
     "backgroundColor": "#1b1b1b",
     "jumuaDhikrReminderEnabled": false,
     "jumuaTimeout": 23,
@@ -30,7 +31,7 @@
     "iqamaEnabled": true,
     "randomHadithIntervalDisabling": "",
     "fajrFixationComparedToShuruq": null,
-    "adhanVoice": "bip",
+    "adhanVoice": "hayya-ala-assalat",
     "adhanEnabledByPrayer": [
       "1",
       "1",
@@ -39,6 +40,7 @@
       "1"
     ],
     "footer": true,
+    "displayQrCodeAndLogoOnAndroidTV": false,
     "iqamaMoreImportant": true,
     "timeDisplayFormat": "12",
     "backgroundType": "color",
@@ -79,22 +81,23 @@
     "closed": null,
     "announcements": [],
     "events": [],
-    "aidPrayerTime": null,
-    "aidPrayerTime2": null,
+    "aidPrayerTime": "08:00",
+    "aidPrayerTime2": "09:00",
+    "aidPrayerTime3": null,
     "jumua": "13:45",
     "jumua2": null,
     "jumua3": null,
     "jumuaAsDuhr": false,
     "imsakNbMinBeforeFajr": 5,
-    "hijriAdjustment": -1,
+    "hijriAdjustment": 0,
     "times": [
-      "04:03",
-      "13:13",
-      "18:16",
-      "20:37",
-      "21:45"
+      "03:02",
+      "13:19",
+      "18:53",
+      "21:36",
+      "22:54"
     ],
-    "shuruq": "05:47",
+    "shuruq": "05:00",
     "calendar": [
       {
         "1": [
@@ -4009,49 +4012,49 @@
           "13:45",
           "19:00",
           "21:01",
-          "22:45"
+          "22:30"
         ],
         "16": [
           "04:30",
           "13:45",
           "19:00",
           "21:02",
-          "22:45"
+          "22:30"
         ],
         "17": [
           "04:30",
           "13:45",
           "19:00",
           "21:04",
-          "22:45"
+          "22:30"
         ],
         "18": [
           "04:30",
           "13:45",
           "19:00",
           "21:05",
-          "22:45"
+          "22:30"
         ],
         "19": [
           "04:30",
           "13:45",
           "19:00",
           "21:07",
-          "22:45"
+          "22:30"
         ],
         "20": [
           "04:30",
           "13:45",
           "19:00",
           "21:08",
-          "22:45"
+          "22:30"
         ],
         "21": [
           "04:30",
           "13:45",
           "19:00",
           "21:09",
-          "22:45"
+          "22:30"
         ],
         "22": [
           "04:30",
@@ -4401,7 +4404,7 @@
           "23:00"
         ],
         "10": [
-          "04:30",
+          "04:45",
           "13:45",
           "19:00",
           "21:31",
@@ -4454,45 +4457,45 @@
           "13:45",
           "19:00",
           "21:25",
-          "23:00"
+          "22:45"
         ],
         "18": [
-          "05:00",
+          "04:45",
           "13:45",
           "19:00",
           "21:24",
           "22:45"
         ],
         "19": [
-          "05:00",
+          "04:45",
           "13:45",
           "19:00",
           "21:22",
           "22:45"
         ],
         "20": [
-          "05:00",
+          "04:45",
           "13:45",
           "19:00",
           "21:22",
           "22:45"
         ],
         "21": [
-          "05:00",
+          "04:45",
           "13:45",
           "19:00",
           "21:20",
           "22:45"
         ],
         "22": [
-          "05:00",
+          "04:45",
           "13:45",
           "19:00",
           "21:19",
           "22:45"
         ],
         "23": [
-          "05:00",
+          "04:45",
           "13:45",
           "19:00",
           "21:17",
@@ -4503,7 +4506,7 @@
           "13:45",
           "19:00",
           "21:16",
-          "22:45"
+          "22:30"
         ],
         "25": [
           "05:00",
