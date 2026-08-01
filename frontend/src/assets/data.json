@@ -3,6 +3,9 @@
     "showCityInTitle": false,
     "showLogo": true,
     "showPrayerTimesOnMessageScreen": true,
+    "jumuaDhikrReminderEnabled": false,
+    "jumuaBlackScreenEnabled": true,
+    "jumuaTimeout": 23,
     "duaAfterPrayerShowTimes": [
       "11",
       "9",
@@ -14,23 +17,6 @@
     "hijriDateForceTo30": false,
     "duaAfterAzanEnabled": false,
     "duaAfterPrayerEnabled": false,
-    "alwaysDisplayHhMmFormat": false,
-    "iqamaDisplayTime": 11,
-    "iqamaBip": true,
-    "iqamaBipSound": "bip",
-    "backgroundColor": "#1b1b1b",
-    "jumuaDhikrReminderEnabled": false,
-    "jumuaTimeout": 23,
-    "randomHadithEnabled": true,
-    "blackScreenWhenPraying": true,
-    "wakeForFajrTime": null,
-    "jumuaBlackScreenEnabled": true,
-    "temperatureEnabled": true,
-    "temperatureUnit": "C",
-    "hadithLang": "en",
-    "iqamaEnabled": true,
-    "randomHadithIntervalDisabling": "",
-    "fajrFixationComparedToShuruq": null,
     "adhanVoice": "hayya-ala-assalat",
     "adhanEnabledByPrayer": [
       "1",
@@ -39,18 +25,34 @@
       "1",
       "1"
     ],
+    "iqamaBipSound": "bip",
+    "iqamaBip": true,
+    "iqamaFullScreenCountdown": false,
+    "blackScreenWhenPraying": true,
+    "alwaysDisplayHhMmFormat": false,
+    "iqamaDisplayTime": 11,
+    "randomHadithEnabled": true,
+    "randomHadithIntervalDisabling": "",
+    "temperatureEnabled": true,
+    "temperatureUnit": "C",
+    "backgroundColor": "#1b1b1b",
+    "theme": "spring",
+    "hadithLang": "en",
+    "wakeForFajrTime": null,
+    "iqamaEnabled": true,
+    "fajrFixationComparedToShuruq": null,
+    "iqamaMoreImportant": true,
     "footer": true,
     "displayQrCodeAndLogoOnAndroidTV": false,
-    "iqamaMoreImportant": true,
-    "timeDisplayFormat": "12",
+    "adhanDuration": 150,
     "backgroundType": "color",
     "backgroundMotif": "1",
-    "iqamaFullScreenCountdown": false,
-    "theme": "spring",
-    "adhanDuration": 150,
+    "timeDisplayFormat": "12",
     "displayingSabahImsak": false,
     "sabahImsakStartDate": null,
     "sabahImsakEndDate": null,
+    "customAthan": null,
+    "customAthanDuration": null,
     "type": "MOSQUE",
     "partner": true,
     "name": "Barry Masjid - Wales UK",
@@ -91,13 +93,13 @@
     "imsakNbMinBeforeFajr": 5,
     "hijriAdjustment": 0,
     "times": [
-      "03:02",
-      "13:19",
-      "18:53",
-      "21:36",
-      "22:54"
+      "03:44",
+      "13:22",
+      "18:39",
+      "21:07",
+      "22:17"
     ],
-    "shuruq": "05:00",
+    "shuruq": "05:33",
     "calendar": [
       {
         "1": [
@@ -4560,46 +4562,46 @@
       },
       {
         "1": [
-          "05:15",
+          "05:00",
           "13:45",
           "19:00",
           "21:04",
-          "22:15"
+          "22:30"
         ],
         "2": [
-          "05:15",
+          "05:00",
           "13:45",
           "19:00",
           "21:03",
-          "22:15"
+          "22:30"
         ],
         "3": [
-          "05:15",
+          "05:00",
           "13:45",
           "19:00",
           "21:01",
-          "22:15"
+          "22:30"
         ],
         "4": [
-          "05:15",
+          "05:00",
           "13:45",
           "19:00",
           "20:59",
-          "22:15"
+          "22:30"
         ],
         "5": [
-          "05:15",
+          "05:00",
           "13:45",
           "19:00",
           "20:57",
-          "22:15"
+          "22:30"
         ],
         "6": [
-          "05:15",
+          "05:00",
           "13:45",
           "19:00",
           "20:56",
-          "22:15"
+          "22:30"
         ],
         "7": [
           "05:15",
@@ -4613,45 +4615,45 @@
           "13:45",
           "19:00",
           "20:52",
-          "22:00"
+          "22:15"
         ],
         "9": [
           "05:15",
           "13:45",
           "19:00",
           "20:50",
-          "22:00"
+          "22:15"
         ],
         "10": [
           "05:15",
           "13:45",
           "19:00",
           "20:48",
-          "22:00"
+          "22:15"
         ],
         "11": [
           "05:15",
           "13:45",
           "19:00",
           "20:47",
-          "22:00"
+          "22:15"
         ],
         "12": [
           "05:15",
           "13:45",
           "19:00",
           "20:45",
-          "22:00"
+          "22:15"
         ],
         "13": [
           "05:15",
           "13:45",
           "19:00",
           "20:43",
-          "22:00"
+          "22:15"
         ],
         "14": [
-          "05:15",
+          "05:30",
           "13:45",
           "19:00",
           "20:41",
@@ -4700,11 +4702,11 @@
           "22:00"
         ],
         "21": [
-          "05:30",
+          "05:45",
           "13:45",
           "19:00",
           "20:27",
-          "22:00"
+          "21:45"
         ],
         "22": [
           "05:45",
@@ -4751,9 +4753,9 @@
         "28": [
           "05:45",
           "13:45",
-          "19:00",
+          "18:15",
           "20:12",
-          "21:45"
+          "21:30"
         ],
         "29": [
           "05:45",
