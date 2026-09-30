@@ -167,7 +167,7 @@ const Timetable = () => {
                     {/* Date */}
                     <TableCell className="text-[10px] md:text-xs border-r-1 border-black">
                       {isSpecialDate(currentMonth, rowIndex + 1) && (
-                        <span className="text-red-600 font-bold mr-1">*</span>
+                        <span className="text-red-600 font-bold">*</span>
                       )}
                       {rowIndex + 1}
                     </TableCell>
@@ -187,7 +187,7 @@ const Timetable = () => {
                         }`}
                       >
                         {isSpecialDate(currentMonth, rowIndex + 1) && (
-                          <span className="text-red-600 font-bold mr-1">*</span>
+                          <span className="text-red-600 font-bold">*</span>
                         )}
                         {cell}
                       </TableCell>
