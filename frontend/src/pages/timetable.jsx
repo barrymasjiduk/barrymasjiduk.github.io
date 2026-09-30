@@ -168,7 +168,7 @@ const Timetable = () => {
                     <TableCell className="text-[10px] md:text-xs border-r-1 border-black">
                       <span className="relative">
                         {isSpecialDate(currentMonth, rowIndex + 1) && (
-                          <span className="text-red-600 font-bold absolute right-full">
+                          <span className="text-red-600 font-bold">
                             *
                           </span>
                         )}
@@ -182,10 +182,9 @@ const Timetable = () => {
                         key={cellIndex}
                         style={
                           headings[cellIndex + 1][2] &&
-                          (
-                            rowIndex + 1 !== parseInt(currentDate) ||
-                            currentMonth !== monthNum
-                          )
+                          rowIndex + 1 !== parseInt(currentDate) ||
+                          headings[cellIndex + 1][2] &&
+                          currentMonth !== monthNum
                             ? { color: headings[cellIndex + 1][2] }
                             : undefined
                         }
@@ -195,14 +194,10 @@ const Timetable = () => {
                             : ""
                         }`}
                       >
-                        <span className="relative">
-                          {isSpecialDate(currentMonth, rowIndex + 1) && (
-                            <span className="text-red-600 font-bold absolute right-full">
-                              *
-                            </span>
-                          )}
-                          {cell}
-                        </span>
+                        {isSpecialDate(currentMonth, rowIndex + 1) && (
+                          <span className="text-red-600 font-bold">*</span>
+                        )}
+                        {cell}
                       </TableCell>
                     ))}
                   </TableRow>
