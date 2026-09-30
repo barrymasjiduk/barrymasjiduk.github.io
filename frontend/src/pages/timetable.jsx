@@ -166,10 +166,14 @@ const Timetable = () => {
                   >
                     {/* Date */}
                     <TableCell className="text-[10px] md:text-xs border-r-1 border-black">
-                      {isSpecialDate(currentMonth, rowIndex + 1) && (
-                        <span className="text-red-600 font-bold">*</span>
-                      )}
-                      {rowIndex + 1}
+                      <span className="relative">
+                        {isSpecialDate(currentMonth, rowIndex + 1) && (
+                          <span className="text-red-600 font-bold absolute right-full">
+                            *
+                          </span>
+                        )}
+                        {rowIndex + 1}
+                      </span>
                     </TableCell>
 
                     {/* Times */}
@@ -178,18 +182,27 @@ const Timetable = () => {
                         key={cellIndex}
                         style={
                           headings[cellIndex + 1][2] &&
-                          (rowIndex + 1 !== parseInt(currentDate) || currentMonth !== monthNum)
+                          (
+                            rowIndex + 1 !== parseInt(currentDate) ||
+                            currentMonth !== monthNum
+                          )
                             ? { color: headings[cellIndex + 1][2] }
                             : undefined
                         }
                         className={`text-[10px] md:text-xs leading-tight ${
-                          cellIndex === 8 ? "border-r-1 border-black" : ""
+                          cellIndex === 8
+                            ? "border-r-1 border-black"
+                            : ""
                         }`}
                       >
-                        {isSpecialDate(currentMonth, rowIndex + 1) && (
-                          <span className="text-red-600 font-bold">*</span>
-                        )}
-                        {cell}
+                        <span className="relative">
+                          {isSpecialDate(currentMonth, rowIndex + 1) && (
+                            <span className="text-red-600 font-bold absolute right-full">
+                              *
+                            </span>
+                          )}
+                          {cell}
+                        </span>
                       </TableCell>
                     ))}
                   </TableRow>
