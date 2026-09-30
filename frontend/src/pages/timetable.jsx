@@ -166,8 +166,10 @@ const Timetable = () => {
                   >
                     {/* Date */}
                     <TableCell className="text-[10px] md:text-xs border-r-1 border-black">
+                      {isSpecialDate(currentMonth, rowIndex + 1) && (
+                        <span className="text-red-600 font-bold mr-1">*</span>
+                      )}
                       {rowIndex + 1}
-                      {isSpecialDate(currentMonth, rowIndex + 1) && <span className="text-red-600">*</span>}
                     </TableCell>
 
                     {/* Times */}
@@ -175,12 +177,18 @@ const Timetable = () => {
                       <TableCell
                         key={cellIndex}
                         style={
-                          headings[cellIndex + 1][2] && rowIndex + 1 !== parseInt(currentDate) || headings[cellIndex + 1][2] && currentMonth !== monthNum
+                          headings[cellIndex + 1][2] &&
+                          (rowIndex + 1 !== parseInt(currentDate) || currentMonth !== monthNum)
                             ? { color: headings[cellIndex + 1][2] }
                             : undefined
                         }
-                        className={`text-[10px] md:text-xs leading-tight ${cellIndex === 8 ? "border-r-1 border-black" : ""}`}
+                        className={`text-[10px] md:text-xs leading-tight ${
+                          cellIndex === 8 ? "border-r-1 border-black" : ""
+                        }`}
                       >
+                        {isSpecialDate(currentMonth, rowIndex + 1) && (
+                          <span className="text-red-600 font-bold mr-1">*</span>
+                        )}
                         {cell}
                       </TableCell>
                     ))}
