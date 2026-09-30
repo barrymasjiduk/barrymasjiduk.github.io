@@ -130,7 +130,7 @@ const Timetable = () => {
             ))}
           </div>
 
-            <Table className="text-center">
+            <Table className="text-center w-full table-fixed">
               {/* Header + caption */}
               <TableCaption>{months[currentMonth]} Prayer Times</TableCaption>
               <TableHeader>
